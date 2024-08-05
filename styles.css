@@ -9,7 +9,7 @@
     font-family: 'Times New Roman', Times, serif;
     text-align:center;
 }
-.calculadora{
+.Calculadora{
     position:absolute;
     background-color:right(222,219,219,0.7);
     top:50%;
@@ -36,5 +36,14 @@
     margin:5px;
     color:black;
     text-align:right;
+    padding:5px;
+}
+#resultado{
+    background-color:white;
+    width:207px;
+    height:30px;
+    margin:5px;
+    color:black;
+    text-align: right;
     padding:5px;
 }

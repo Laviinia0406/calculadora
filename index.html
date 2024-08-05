@@ -40,9 +40,39 @@
          <tr>
             <TD><button class= "botao">0</button></TD>
             <TD><button class= "botao">.</button></TD>
+            <td><button classs= "botao">
          </tr>
         </TABLE>
     </div>
-</diV>
+</div>
+        <script>
+            function insert (num)
+            {
+                var numero = document.getElementById ('resultado').innerHTML;
+                document.getElemenById('resultado').innerHTML= numero+num;
+            }
+            function clean ()
+            {
+               document.getElemenById('resultado').innerHTML=" ";
+            }
+            function back()
+            {
+                var resultado= document.getElemenById('resultado').innerHTML;
+                document.getElemenById('resultado').innerHTML=resultado.substring (0, resultado.length -1);
+            }
+            function calcular ()
+                var resultado = document.getElemenById('resultado').innerHTML;
+                if (resultado)
+                {
+                    document.getElemenById('resultado').innerHTML= eval(resultado);
+                }
+                else (resultado)
+                {
+                    document.getElemenById('resultado').innerHTML= "nada para calcular";
+                }
+        </script>
+    </body>
+        
+    </html>
 </body>
 </html>
