@@ -2,47 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>calculadora</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="fundo">
         <h1>Criado por Lavínia</h1>
-    <div class="calculadora">
-        <HI>CALCULADORA</HI>
-        <P ID=" RESULTADO"> RESULTADO</P>
-        <TABLE>
+    <div class="Calculadora">
+        <h1>Calculadora</h1>
+        <p id="resultado"></P>
+        <table>
         <tr>
             <td> <button class= "botao">C</button></td>
             <td> <button class= "botao"><</button></TD>
             <td> <button class= "botao">/</button></td>
             <td> <button class= "botao">X</button></td>
         </tr>
-         <TR> 
+         <tr> 
             <td> <button class= "botao">7</button></td>
             <td> <button class= "botao">8</button> </td>
             <td> <button class= "botao">9</button></td>
             <td> <button class= "botao">-</button> </td>
-         </TR>   
-         <TR>
-            <TD><button class= "botao">6</button></TD>
-            <TD><button class= "botao">5</button></TD>
-            <TD><button class= "botao">4</button></TD>
-            <TD><button class= "botao">+</button></TD>
-         </TR>
-         <TR>
-            <TD><button class= "botao">3</button></TD>
-            <TD><button class= "botao">2</button></TD>
-            <TD><button class= "botao">1</button></TD>
-            <TD><button class= "botao">=</button></TD>
-         </TR>
+         </tr>   
          <tr>
-            <TD><button class= "botao">0</button></TD>
-            <TD><button class= "botao">.</button></TD>
-            <td><button classs= "botao">
+            <td><button class= "botao">6</button></td>
+            <td><button class= "botao">5</button></td>
+            <td><button class= "botao">4</button></td>
+            <td><button class= "botao">+</button></td>
+            </tr>
+         <tr>
+            <td><button class= "botao">3</button></td>
+            <td><button class= "botao">2</button></td>
+            <td><button class= "botao">1</button></td>
+            <td rowspan="2"><button class= "botao" style="width: 106px;">=</button></td>
+            </tr>
+         <tr>
+            <td colspan="2"><button class= "botao" style="height: 106px;">0</button></td>
+            <td><button class= "botao">.</button></td>
          </tr>
-        </TABLE>
+        </table>
     </div>
 </div>
         <script>
@@ -61,18 +60,16 @@
                 document.getElemenById('resultado').innerHTML=resultado.substring (0, resultado.length -1);
             }
             function calcular ()
+            {
                 var resultado = document.getElemenById('resultado').innerHTML;
-                if (resultado)
+                if ('resultado')
                 {
-                    document.getElemenById('resultado').innerHTML= eval(resultado);
+                    document.getElemenById('resultado').innerHTML= eval('resultado');
                 }
-                else (resultado)
+                else ('resultado')
                 {
                     document.getElemenById('resultado').innerHTML= "nada para calcular";
                 }
         </script>
-    </body>
-        
-    </html>
 </body>
 </html>
